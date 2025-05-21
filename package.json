@@ -1,0 +1,13 @@
+{
+  "name": "trabalho-final",
+  "version": "1.0.0",
+  "description": "Trabalho final do terceiro módulo da Pós graduação",
+  "author": "Roger Rezende Ribeiro Santos",
+  "type": "module",
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "mocha": "^11.4.0"
+  }
+}
