@@ -36,5 +36,18 @@ export function decidirTipoDeAtividadePorPorte (string) {
 }
 
 export async function buscarDadoAsync () {
-    return 'Pipoca'
+    const url = 'https://serverest.dev/#/Login/post_login'
+    try {
+        const resposta = await fetch (url);
+
+        if (!resposta.ok) {
+            throw new Error (`Erro na requisição: ${resposta.status}`);
+        }
+
+        const dados = await resposta.json();
+        return dados;
+    } catch (erro) {
+        //console.error ('Erro ao buscar dados: ', erro);
+        return 'Pipoca';
+    }
 }

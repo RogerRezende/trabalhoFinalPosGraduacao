@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Trabalho final do terceiro módulo da Pós graduação",
   "author": "Roger Rezende Ribeiro Santos",
+  "license": "ISC",
   "type": "module",
   "scripts": {
     "test": "mocha"
