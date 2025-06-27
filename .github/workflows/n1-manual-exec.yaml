@@ -28,15 +28,19 @@ jobs:
       - name: Instalando Yarn
         run: npm install -g yarn
 
-      # instalação do mocha
-      - name: Instalando mocha
-        run: npm install --save-dev mocha
-
       # instalação das dependências
       - name: Instalando dependências
         run: yarn
 
+      # instalação do mocha
+      - name: Instalando mocha
+        run: npm install --save-dev mocha
+
+      # adicionando dependência do mocha
+      - name: Adicionando dependência mocha
+        run: yarn add --dev mocha
+
       # executar os testes
       - name: Executando testes do trabalho final
-        run: yarn run tests
+        run: npm test tests
         # run: npm test .\tests\trabalho-final.js
