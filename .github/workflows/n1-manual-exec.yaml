@@ -38,4 +38,5 @@ jobs:
 
       # executar os testes
       - name: Executando testes do trabalho final
-        run: npm test .\tests\trabalho-final.js
+        run: yarn test .\tests\trabalho-final.js
+        # run: npm test .\tests\trabalho-final.js
