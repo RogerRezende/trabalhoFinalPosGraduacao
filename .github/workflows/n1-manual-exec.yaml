@@ -10,7 +10,7 @@ on:
 
 # tarefas dentro do pipeline = jobs
 jobs:
-  e2e-tests:
+  trabalho-final-tests:
     # máquina que o job vai executar
     runs-on: ubuntu-latest
 
@@ -28,6 +28,14 @@ jobs:
       - name: Instalando Yarn
         run: npm install -g yarn
 
+      # instalação do mocha
+      - name: Instalando mocha
+        run: npm install --save-dev mocha
+
       # instalação das dependências
       - name: Instalando dependências
         run: yarn
+
+      # executar os testes
+      - name: Executando testes do trabalho final
+        run: npm test .\tests\trabalho-final.js
